@@ -1,5 +1,6 @@
 import sys
 
+
 class MorseTranslater:
     def __init__(self, input: str) -> None:
         self.input = input
@@ -42,7 +43,7 @@ class MorseTranslater:
             "9": "----. ",
             "0": "----- ",
         }
-    
+
     def translate(self) -> str:
         result = ""
         for c in self.input:
@@ -61,6 +62,7 @@ def main():
         print(translator.translate())
     except AssertionError as e:
         print(f"{type(e).__name__}: {e}")
+
 
 if __name__ == "__main__":
     main()
